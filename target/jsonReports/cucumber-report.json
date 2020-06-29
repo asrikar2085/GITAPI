@@ -1,0 +1,322 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-29T01:36:56.026Z",
+        "line": 13,
+        "name": "Verify if place is successfully added using ADD PLACE API",
+        "description": "",
+        "id": "place-api-validation;verify-if-place-is-successfully-added-using-add-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1339998100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload using \"Srikar\",\"1209 charter hourse ln\",\"English-IN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Srikar\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"1209 charter hourse ln\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"English-IN\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.add_place_payload_using(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2475992400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User calls \"ADDPLACE\" API with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ADDPLACE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.user_calls_API_with_HTTP_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call should be successfull with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.the_api_call_should_be_successfull_with_status_code_something(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 463996700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.something_in_response_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11998900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.something_in_response_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1548032600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify \"name\" retrieved from \"GETPLACE\" API matches with \"Srikar\" using \"place_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"GETPLACE\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Srikar\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"place_id\"",
+                  "offset": 72
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.verify_retrieved_from_API_matches_with_using(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-29T01:37:01.930Z",
+        "line": 14,
+        "name": "Verify if place is successfully added using ADD PLACE API",
+        "description": "",
+        "id": "place-api-validation;verify-if-place-is-successfully-added-using-add-place-api;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload using \"Medha\",\"1209 deer trl\",\"French-IN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Medha\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"1209 deer trl\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"French-IN\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.add_place_payload_using(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1484613100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User calls \"ADDPLACE\" API with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ADDPLACE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.user_calls_API_with_HTTP_method(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call should be successfull with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.the_api_call_should_be_successfull_with_status_code_something(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7994100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.something_in_response_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8000500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.something_in_response_is_something(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1575629100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify \"name\" retrieved from \"GETPLACE\" API matches with \"Medha\" using \"place_id\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"GETPLACE\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Medha\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"place_id\"",
+                  "offset": 71
+                }
+              ],
+              "location": "stepdefinitions.FeaturetoCode.verify_retrieved_from_API_matches_with_using(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Place API Validation",
+    "description": "",
+    "id": "place-api-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PlaceValidation.feature",
+    "tags": []
+  }
+]

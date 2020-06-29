@@ -1,0 +1,6 @@
+Resources\PayLoadData.class
+pojo\ConstructJson.class
+Resources\APIResources.class
+Resources\Utils.class
+BDD\APIFramework\App.class
+pojo\Locationjson.class
