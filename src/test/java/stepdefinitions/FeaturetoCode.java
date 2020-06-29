@@ -63,12 +63,14 @@ public class FeaturetoCode extends Utils {
     
         
     	assertEquals(responsewhen.getStatusCode(),statuscode);
+    	System.out.println("inside the_api_call_should_be_successfull_with_status_code_something method");
     }
 
     @And("^\"([^\"]*)\" in response is \"([^\"]*)\"$")
     public void something_in_response_is_something(String key, String Expectedvalue) throws Throwable {
         
-    	assertEquals(getJsonValue(responsewhen,key),Expectedvalue);   	
+    	assertEquals(getJsonValue(responsewhen,key),Expectedvalue);  
+    	System.out.println("something_in_response_is_something");
     	}
     
     @And("Verify {string} retrieved from {string} API matches with {string} using {string}")
