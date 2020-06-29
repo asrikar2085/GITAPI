@@ -11,6 +11,8 @@ public class Hooks {
 	public void beforescenario() throws IOException
 	{
 		FeaturetoCode ftc = new FeaturetoCode();
+		System.out.println("inside 1 hooks.java");
+		System.out.println("inside 2 hooks.java");
 		
 		if (FeaturetoCode.place_id ==null)
 		{		
