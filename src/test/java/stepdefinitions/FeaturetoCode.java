@@ -63,12 +63,14 @@ public class FeaturetoCode extends Utils {
     
         
     	assertEquals(responsewhen.getStatusCode(),statuscode);
+    	System.out.println("inside the_api_call_should_be_successfull_with_status_code_something method");
     }
 
     @And("^\"([^\"]*)\" in response is \"([^\"]*)\"$")
     public void something_in_response_is_something(String key, String Expectedvalue) throws Throwable {
         
-    	assertEquals(getJsonValue(responsewhen,key),Expectedvalue);   	
+    	assertEquals(getJsonValue(responsewhen,key),Expectedvalue);  
+    	System.out.println("Inside something_in_response_is_something");
     	}
     
     @And("Verify {string} retrieved from {string} API matches with {string} using {string}")
@@ -80,6 +82,7 @@ public class FeaturetoCode extends Utils {
     	user_calls_API_with_HTTP_method(GETPLACE,"GET");
     	String actualname = getJsonValue(responsewhen,outputkey);
     	assertEquals(expectedname, actualname);  	
+    	System.out.println("verify_retrieved_from_API_matches_with_using");
     }
     
     @Given("Delete place payload")
@@ -89,6 +92,7 @@ public class FeaturetoCode extends Utils {
      
     	responsegiven = given().spec(requestspecification()).body(add.DeletePlaceData(place_id));
     	System.out.println("responsegiven is " + responsegiven);
+    	System.out.println("delete_place_payload");
     	
     }
 
