@@ -13,6 +13,10 @@ public class Hooks {
 		FeaturetoCode ftc = new FeaturetoCode();
 		System.out.println("inside 1 hooks.java");
 		System.out.println("inside 2 hooks.java");
+		System.out.println("inside 3 hooks.java");
+		System.out.println("inside 4 hooks.java");
+		System.out.println("inside 5 hooks.java");
+		System.out.println("inside 6 hooks.java");
 		
 		if (FeaturetoCode.place_id ==null)
 		{		
